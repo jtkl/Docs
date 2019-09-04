@@ -46,6 +46,34 @@ as listed below.
  - Findings from Amazon GuardDuty are `logged <AviatrixLogging.html#id13>`__ to the Controller syslog. (Syslog can be exported to `Aviatrix supported Logging services <AviatrixLogging.html>`__.)
  - Findings from Amazon GuardDuty are displayed in Alert Bell on the Controller console.  
  - In addition, if a finding is about instances in a VPC being probed by a malicious IP address, this IP address is blocked by the Controller automatically programming the Network ACL of the VPC, as shown below. 
+ 
+Action catagories
+------------------
+NETWORK_CONNECTION
+PORT_PROBE
+ 
+Corresponding Action finding types
+-----------------------------------
+Trojan:EC2/BlackholeTraffic
+UnauthorizedAccess:EC2/TorIPCaller
+Backdoor:EC2/DenialOfService.Udp
+Recon:EC2/Portscan
+Backdoor:EC2/DenialOfService.Tcp
+UnauthorizedAccess:EC2/RDPBruteForce
+Backdoor:EC2/DenialOfService.UdpOnTcpPorts
+UnauthorizedAccess:EC2/TorClient
+Backdoor:EC2/DenialOfService.Dns
+Backdoor:EC2/DenialOfService.UnusualProtocol
+UnauthorizedAccess:EC2/TorRelay
+Backdoor:EC2/Spambot
+CryptoCurrency:EC2/BitcoinTool.B
+UnauthorizedAccess:EC2/MaliciousIPCaller.Custom
+Behavior:EC2/NetworkPortUnusual
+Behavior:EC2/TrafficVolumeUnusual
+UnauthorizedAccess:EC2/SSHBruteForce
+Trojan:EC2/DropPoint
+Recon:EC2/PortProbeUnprotectedPort
+Recon:EC2/PortProbeEMRUnprotectedPort
 
 |guardduty_acl|
 
