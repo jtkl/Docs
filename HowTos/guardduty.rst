@@ -49,31 +49,31 @@ as listed below.
  
 Action catagories
 ------------------
-NETWORK_CONNECTION
-PORT_PROBE
+* NETWORK_CONNECTION
+* PORT_PROBE
  
 Corresponding Action finding types
 -----------------------------------
-Trojan:EC2/BlackholeTraffic
-UnauthorizedAccess:EC2/TorIPCaller
-Backdoor:EC2/DenialOfService.Udp
-Recon:EC2/Portscan
-Backdoor:EC2/DenialOfService.Tcp
-UnauthorizedAccess:EC2/RDPBruteForce
-Backdoor:EC2/DenialOfService.UdpOnTcpPorts
-UnauthorizedAccess:EC2/TorClient
-Backdoor:EC2/DenialOfService.Dns
-Backdoor:EC2/DenialOfService.UnusualProtocol
-UnauthorizedAccess:EC2/TorRelay
-Backdoor:EC2/Spambot
-CryptoCurrency:EC2/BitcoinTool.B
-UnauthorizedAccess:EC2/MaliciousIPCaller.Custom
-Behavior:EC2/NetworkPortUnusual
-Behavior:EC2/TrafficVolumeUnusual
-UnauthorizedAccess:EC2/SSHBruteForce
-Trojan:EC2/DropPoint
-Recon:EC2/PortProbeUnprotectedPort
-Recon:EC2/PortProbeEMRUnprotectedPort
+* Trojan:EC2/BlackholeTraffic
+* UnauthorizedAccess:EC2/TorIPCaller
+* Backdoor:EC2/DenialOfService.Udp
+* Recon:EC2/Portscan
+* Backdoor:EC2/DenialOfService.Tcp
+* UnauthorizedAccess:EC2/RDPBruteForce
+* Backdoor:EC2/DenialOfService.UdpOnTcpPorts
+* UnauthorizedAccess:EC2/TorClient
+* Backdoor:EC2/DenialOfService.Dns
+* Backdoor:EC2/DenialOfService.UnusualProtocol
+* UnauthorizedAccess:EC2/TorRelay
+* Backdoor:EC2/Spambot
+* CryptoCurrency:EC2/BitcoinTool.B
+* UnauthorizedAccess:EC2/MaliciousIPCaller.Custom
+* Behavior:EC2/NetworkPortUnusual
+* Behavior:EC2/TrafficVolumeUnusual
+* UnauthorizedAccess:EC2/SSHBruteForce
+* Trojan:EC2/DropPoint
+* Recon:EC2/PortProbeUnprotectedPort
+* Recon:EC2/PortProbeEMRUnprotectedPort
 
 |guardduty_acl|
 
